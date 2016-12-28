@@ -16,4 +16,4 @@ Start your image binding the external ports 8083 and 8086 in all interfaces to y
 
 `docker run -d -p 8083:8083 -p 8086:8086 babim/influxdata`
 
-Volume: /data /etc/
+Volume: /data /etc/influxdb
