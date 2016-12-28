@@ -1,7 +1,7 @@
 #!/bin/bash
 
 set -m
-CONFIG_FILE="/config/config.toml"
+CONFIG_FILE="/etc/influxdb/influxdb.conf"
 INFLUX_HOST="localhost"
 INFLUX_API_PORT="8086"
 API_URL="http://${INFLUX_HOST}:${INFLUX_API_PORT}"
