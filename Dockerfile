@@ -24,4 +24,4 @@ VOLUME /data
 
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
-# CMD ["influxd"]
+CMD ["influxd"]
