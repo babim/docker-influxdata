@@ -16,7 +16,7 @@ RUN apk add --no-cache --virtual .build-deps wget gnupg tar ca-certificates bash
     rm -rf *.tar.gz* /usr/src /root/.gnupg && \
     apk del .build-deps ca-certificates
     
-COPY influxdb.conf /etc/influxdb/influxdb.conf
+COPY influxdb.conf /
 
 EXPOSE 8083 8086
 
