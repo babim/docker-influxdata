@@ -1,4 +1,4 @@
-FROM babim/alpinebase
+FROM babim/alpinebase:ssh
 
 ENV INFLUXDB_VERSION 1.0.2
 RUN apk add --no-cache --virtual .build-deps wget gnupg tar ca-certificates bash && \
@@ -18,7 +18,7 @@ RUN apk add --no-cache --virtual .build-deps wget gnupg tar ca-certificates bash
     
 COPY influxdb.conf /
 
-EXPOSE 8083 8086
+EXPOSE 8083 8086 22
 
 VOLUME /data
 
